@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toaster.simpleToast(this,"Show Sdk toast");
+
+        String msz = Toaster.getString("Roni");
+        Toaster.simpleToast(this,msz);
     }
 }
